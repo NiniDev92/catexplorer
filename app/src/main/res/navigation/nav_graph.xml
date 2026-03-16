@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/bienvenidaFragment">
+
+    <fragment
+        android:id="@+id/bienvenidaFragment"
+        android:name="com.example.catexplorer.BienvenidaFragment"
+        android:label="Bienvenida"
+        tools:layout="@layout/fragment_bienvenida">
+
+        <action
+            android:id="@+id/action_bienvenidaFragment_to_listaFragment"
+            app:destination="@id/listaFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaFragment"
+        android:name="com.example.catexplorer.ListaFragment"
+        android:label="Lista"
+        tools:layout="@layout/fragment_lista">
+
+        <action
+            android:id="@+id/action_listaFragment_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.example.catexplorer.DetalleFragment"
+        android:label="Detalle"
+        tools:layout="@layout/fragment_detalle">
+
+        <action
+            android:id="@+id/action_detalleFragment_to_contactoFragment"
+            app:destination="@id/contactoFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/contactoFragment"
+        android:name="com.example.catexplorer.ContactoFragment"
+        android:label="Contacto"
+        tools:layout="@layout/fragment_contacto" />
+
+</navigation>
