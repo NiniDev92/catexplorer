@@ -8,4 +8,4 @@ Pantallas de la app:
 - Detalle del gatito
 - Contacto para adopción
 
-Proyecto desarrollado en Android Studio utilizando Fragments y Navigation.
+Proyecto desarrollado en Android Studio utilizando Fragments y Navigation
